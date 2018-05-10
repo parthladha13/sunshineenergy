@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Sunshine Energy</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+  
   <style>
   header#sp1 {
                 width:100%;
@@ -41,7 +42,7 @@
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(254, 209, 54, 0.9);
+  background:#FFFF33;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -190,7 +191,7 @@
 .homeRequestQuote{
     width:100%;
     min-height:100px;
-    background:grey;
+    background:#b3e6ff;
     padding:50px 0px; 
     height:160px;  
 }
@@ -202,6 +203,7 @@ div{
     max-width:1130px;
     height:auto;
     margin: 0 auto;
+    padding-bottom:10px;
 
 }
 
@@ -210,6 +212,7 @@ div{
     width:22%;
     text-align:center;
     padding-top:0px;
+    padding-right:20px;
 }
 
 .requestQuoteRight a{
@@ -225,21 +228,138 @@ padding:10px 0px;
 transition:all 0.3s linear 0s;
 
 }
+.homeContactSection{
+    width:100%;
+    background:url(images/contact.jpg) no-repeat fixed center center;
+    background-size:cover;
+    box-sizing:border-box;
+    text-align:center;
+    overflow:hidden;
+    }
+    div{
+        display:block;
+    }
+    .homeContactBg{
+        background: rgba(0,0,0,0.4);
+        width:100%;
+        float:left;
+        padding:70px 0px;
 
+    }
+    .ContactBoxes{
+        width:33.2%;
+        padding:0px 3%;
+        box-sizing:border-box;
+        float:left;
+        font-size:20px;
+    }
+    .clear{
+        clear:both;
+    }
+    .ContactBoxes a {
+        color:#fff;
+        text-decoration:none;
+        transition:all 0.3s linear 0s;
+        
+        }
+        #return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+    .drawers {
+  position: relative;
+    }
+  .drawer {
+    position: fixed;
+    display: none;
+    background:#ebebe0 ;
+    width:500px;
+    overflow:hidden;
+  }
  
       </style>
 </head>
 <body>
-       
+    <script>
+(function($){var a={},c="doTimeout",d=Array.prototype.slice;$[c]=function(){return b.apply(window,[0].concat(d.call(arguments)))};$.fn[c]=function(){var f=d.call(arguments),e=b.apply(this,[c+f[0]].concat(f));return typeof f[0]==="number"||typeof f[1]==="number"?this:e};function b(l){var m=this,h,k={},g=l?$.fn:$,n=arguments,i=4,f=n[1],j=n[2],p=n[3];if(typeof f!=="string"){i--;f=l=0;j=n[1];p=n[2]}if(l){h=m.eq(0);h.data(l,k=h.data(l)||{})}else{if(f){k=a[f]||(a[f]={})}}k.id&&clearTimeout(k.id);delete k.id;function e(){if(l){h.removeData(l)}else{if(f){delete a[f]}}}function o(){k.id=setTimeout(function(){k.fn()},j)}if(p){k.fn=function(q){if(typeof p==="string"){p=g[p]}p.apply(m,d.call(n,i))===true&&!q?o():e()};o()}else{if(k.fn){j===undefined?e():k.fn(j===false);return true}else{e()}}}})(jQuery);
+
+
+$(document).ready(function() {
+  var $links = $('.menu a'),
+      $drawers = $('.drawer');
+
+  $links.each(function (){
+    var $link = $(this),
+        $drawer = $drawers.filter('#' + $link.data('drawer')),
+        $both = $(this).add($drawer);
+
+    $both.hover(function () {
+      $both.doTimeout( 'hover', 200, function() {
+        $drawer.fadeIn(100);
+      });
+    
+    }, function () {
+      $both.doTimeout( 'hover', 200, function() {
+        $drawer.fadeOut(100);
+      });
+    });
+  });
+});
+   </script>    
 <header id="sp1" class="dark1 center" style="background-image:url(images/background.jpg)">
         <div class="container-fluid" style="position:relative; background-color:white; height:90px;"  >
                 <img src="images/sun.png" style="float:left; margin-top:10px; margin-left:5px; position:absolute;">
                 <nav class="navbar-toggle-always collapsed" style="float:right; position:relative; margin-top:20px;">
     
-                        <ul class="nav justify-content-end">
+                        <ul class="nav justify-content-end, menu">
                       <li class="nav-item">
-                        <a class="nav-link" href="#" style="color:black; font:18px Poppins,sans-serif; font-weight:bold">Home</a>
-                      </li>
+                        <a class="nav-link" href="#" data-drawer = "drawer1" style="color:black; font:18px Poppins,sans-serif; font-weight:bold" >Home</a>
+                                <div class="drawers">
+                                        <div class="drawer" id="drawer1">
+                                          <p>
+                                                Sunshine Energy Inc. Group is one of the leading energy and engineering solutions provider, offering a range of products and services that help customers effectively meet their energy needs in a safe and sustainable manner. Our highly qualified Business executive work closely with our Investors to help them secure maximum returns out of their investments. Our strategic plan of action and infrastructure enables fast growth and secured returns we work closely with our clients to ensure our customers receive full value.......<a href="#" style="text-decoration: none" >[Learn More.]</a>
+                                          </p>
+                                        </div> 
+                                        </div>
+                        
+                    </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#" style="color:black;font:18px Poppins,sans-serif; font-weight:bold">About Us</a>
                       </li>
@@ -258,12 +378,13 @@ transition:all 0.3s linear 0s;
                     </ul>
                     </nav>
                     </div>
+                     
                     <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
                         <div class="welcome-text-box">
                     <h5 style="color:white; font:15px Poppins,sans-serif;letter-spacing:1.5px; text-transform:uppercase;"><center>Welcome to Sunshine Energy</center></h5> 
                     </div>
                     <div class="welcome-section">
-                        <h1 style="color:white; font:30px Poppins,sans-serif"><center>One Time Investment. Life Time Savings</center></h1>
+                        <h1 style="color:white; font:30px Poppins,sans-serif"><center>One Time Investment.Life Time Savings</center></h1>
                     </div>
                     <div class="welcome-description">
                             <h6 style="color:white; font:20px Poppins,sans-serif"><center>Efficient Solar Power Solutions</center></h6>
@@ -314,7 +435,7 @@ transition:all 0.3s linear 0s;
                         <i class="fa fa-plus fa-3x"></i>
                       </div>
                     </div>
-                    <img class="img-fluid" src="images/container3.jpg" alt="">
+                    <img class="img-fluid" src="container3.jpg" alt="">
                   </a>
                   <div class="portfolio-caption">
                     <h4>Solar Power</h4>
@@ -370,20 +491,62 @@ transition:all 0.3s linear 0s;
          <BR><BR>
             <div class="container-fluid" style="position:relative; text-align:center; color:black">
     
-                    <img src="images/solar2.jpg" width="100%" height="300">
+                    <img src="solar2.jpg" width="100%" height="300">
                     <div class="centered" style=" position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);"><h4><font size="6">See how we can help you save money and benefit the environment</font></h4></div>
             </div>
             <BR><BR>
             <div class="homeRequestQuote">
                 <div class="section-mid">
-                <h6 style="font-size:27px;max-width:68%;float:left;">Get in touch with us today by sharing your contact information to find out how we can bring down your dependence on fossil fuels by using solar energy</h6>
+                <h6 style="font-size:27px;max-width:68%;float:left;margin-left:20px;">Get in touch with us today by sharing your contact information to find out how we can bring down your dependence on fossil fuels by using solar energy</h6>
             <div class="requestQuoteRight">
-                <a href="#" title>Submit your Quote</a>
+                <a href="#">Submit your Quote</a>
             </div>
             </div>
             </div>  
-            <BR><BR><BR><BR><BR>
-                <h1><center>Contact Us</center></h1>
-    
+            <BR><BR>
+                <div class="homeContactSection">
+                    <div class="homeContactBg">
+                        <div class="section-mid">
+                            <h4 style="color:white; font:40px Poppins,sans-serif;letter-spacing:1.5px; text-transform:uppercase;"><center>Contact Us</center></h4>
+                            <br><BR>
+                            <div class="ContactBoxes">
+                                    <i class="fa fa-phone" aria-hidden="true" style="color:white; font-size:84px;"></i>
+                                <p>
+                                    <a href="tel:+9199711 19724" >+91 997-111-9724</a>
+                                </p>
+                            </div>
+                            <div class="ContactBoxes" >
+                                    <i class="fa fa-envelope" aria-hidden="true" style="color:white; font-size:84px;"></i>
+                                    <p>
+                                        <a href="mailto:mail.renewableenergy@gmail.com">mail.renewableenergy@gmail.com</a>
+                                    </p>
+                                </div>
+                                <div class="ContactBoxes">
+                                        <i class="fa fa-clipboard" aria-hidden="true" style="color:white; font-size:84px;"></i>
+                                        <p>
+                                            <a href="#">Online Enquiry</a>
+                                        </p>
+                                    </div>
+                                    <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                    <a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up"></i></a>
+<script>
+    // ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
+</script>
 </body>
 </html>
+
