@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FAQ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+  
+  <style>
+     * {
+    box-sizing: border-box;
+}
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container1 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+.header{
+    width:100%;
+                height:500px;
+                display:block;
+                position:relative;
+                background-size:cover;
+                text-align:center;
+                color:white;
+                position:relative;
+}
+  .container {
+  width: 70%;
+  margin: 150px auto;
+}
+
+body {
+  color: #4B4B4B;
+  font-family: sans-serif;
+  font-family:verdana;
+}
+body a {
+  cursor: pointer;
+  color: #4B4B4B;
+  text-decoration: none;
+}
+
+span {
+  letter-spacing: 0px;
+}
+
+p {
+  font-weight: 200;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/* Styles for Accordion */
+.toggle:last-child {
+  border-bottom: 1px solid #dddddd;
+}
+.toggle .toggle-title {
+  position: relative;
+  display: block;
+  border-top: 1px solid #dddddd;
+  margin-bottom: 6px;
+}
+.toggle .toggle-title h3 {
+    color:red;
+  font-size: 16px;
+  margin: 0px;
+  line-height: 1;
+  cursor: pointer;
+  font-weight: 200;
+}
+.toggle .toggle-inner {
+  padding: 7px 25px 10px 25px;
+  display: none;
+  margin: -7px 0 6px;
+}
+.toggle .toggle-inner div {
+  max-width: 100%;
+}
+.toggle .toggle-title .title-name {
+  display: block;
+  padding: 25px 25px 14px;
+}
+.toggle .toggle-title a i {
+  font-size: 22px;
+  margin-right: 5px;
+}
+.toggle .toggle-title i {
+  position: absolute;
+  background: url("http://arielbeninca.com/Storage/plus_minus.png") 0px -24px no-repeat;
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease;
+  margin: 20px;
+  right: 0;
+}
+.toggle .toggle-title.active i {
+  background: url("http://arielbeninca.com/Storage/plus_minus.png") 0px 0px no-repeat;
+}
+.tabs-menu {
+    padding: 0 30px;
+    overflow: hidden;
+    background: black;
+    margin-bottom: 0;
+        list-style:none;
+}
+.tabs-menu li {
+    height: auto;
+    padding: 0;
+    float: left;
+    border-right: 5px solid black;
+    list-style: none;
+    cursor: pointer;
+    display: list-item;
+    background-color:grey
+}
+.tabs-menu li.current {
+    position: relative;
+    z-index: 5;
+    box-shadow: 0 3px 5px 1px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 3px 5px 1px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 3px 5px 1px rgba(0,0,0,.2);
+    -o-box-shadow: 0 3px 5px 1px rgba(0,0,0,.2);
+    background: red;
+}
+.tabs-menu li a {
+    padding:8px 20px;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+}
+  </style>
+  
+</head>
+
+<body>
+    
+    <div class="container-fluid" style="position:relative; background-color:white; height:90px;"  >
+        <img src="sun.png" style="float:left; margin-top:10px; margin-left:5px; position:absolute;">
+        <nav class="navbar-toggle-always collapsed" style="float:right; position:relative; margin-top:20px;">
+
+                <ul class="nav justify-content-end, menu">
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-drawer = "drawer1" style="color:black; font:18px Poppins,sans-serif; font-weight:bold" >Home</a>
+                                       
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color:black;font:18px Poppins,sans-serif; font-weight:bold">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color:black; font:18px Poppins,sans-serif; font-weight:bold">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color:black;font:18px Poppins,sans-serif; font-weight:bold">Projects</a>
+              </li>
+              <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:black;font:18px Poppins,sans-serif;font-weight:bold ">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                        <a class="nav-link" href="#" style="color:black;font:18px Poppins,sans-serif;font-weight:bold">Become a Reseller</a>
+                      </li>
+            </ul>
+            </nav>
+            </div>
+            <div class="header" style=" background-image:url(contact3.jpg)">
+
+             <div class="centered" style=" position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+                 <h1 style="font:40px Poppins,sans-serif;letter-spacing:1.5px; text-transform:uppercase;">SOLAR FAQs</h1>
+                 <h1>Frequently Asked Questions Related To Solar.</h1>
+             </div>
+             </div>
+             <section class="faq-body" style="border:20px solid black; background:white;">
+               <div class="tab-container">
+                 <ul class="tabs-menu">
+                    <li id="tab_general" class="tabclass"><a href="faq-general.html">GENERAL</a></li>
+                    <li id="tab_commercial" class="tabclass current"><a href="#">COMMERCIAL</a></li>
+                    <li id="tab_installation-maintenance" class="tabclass"><a href="faq-install.html">INSTALLATION &amp; MAINTENANCE</a></li>
+                    <li id="tab_technology" class="tabclass"><a href="faq-tech.html">TECHNOLOGY</a></li>
+                    </ul>
+                    </div>
+    <div class="container1"> 
+    <div class="toggle">
+	<div class="toggle-title ">
+		<h3>
+		<i></i>
+		<span class="title-name">What are my solar buying and financing options?</span>
+		</h3>
+	</div>
+	<div class="toggle-inner">
+        
+        <p>There are three buying and financing options for solar.</p>
+        <ul>
+            <li><strong>Buying a Solar PV system (CAPEX Model):</strong> You purchase the Solar PV system upfront and can avail various bank loan options to finance your Solar PV system.</li>
+            <li><strong>Buying only solar power (RESCO Model): </strong> A solar power developer owns the Solar PV system setup on your rooftop/ land. You only pay for the generated electricity at a pre-agreed tariff. This usually requires a long-term buying commitment and guarantees from your side and entails a lengthy credit appraisal process.</li>
+            <li><strong>Equipment leasing:</strong> An equipment leasing company will lease the Solar PV system to you and will charge you a fixed monthly/ periodic fee. This also requires long term commitments and guarantees from buyers. However, equipment leasing is not widely available as of now.</li>
+        </ul>
+	</div>
+	</div><!-- END OF TOGGLE -->
+	
+	
+	<div class="toggle">
+		<div class="toggle-title ">
+			<h3>
+			<i></i>
+			<span class="title-name">What is net metering?</span>
+			</h3>
+		</div>
+		
+		<div class="toggle-inner">
+			<p>Net metering allows you to sell excess (unconsumed) solar power back to the grid. For example, if on a given day you generated 20 units from solar and consumed only 18 units, the balance 2 units will be sold back to the grid. This ensures that you maximize your savings from solar.</p>
+		</div>
+		</div><!-- END OF TOGGLE -->
+		
+		<div class="toggle">
+			<div class="toggle-title  ">
+				<h3>
+				<i></i>
+				<span class="title-name">How much does a Solar PV system cost?</span>
+				</h3>
+			</div>
+			
+			<div class="toggle-inner">
+                <p>Solar PV system costs vary depending on the size of the system. An on-grid system of a size up to 10kWp costs Rs. 72-90/Wp, between 10 – 100 kWp costs Rs. 63-70/Wp and above 100KWp costs Rs. 60-63/Wp systems.
+                    For utility scale solar projects, costs can be even lower than Rs. 50/Wp. However, for off-grid systems with battery backup cost goes up significantly and lies between Rs.110 -125/ Wp.</p>
+                
+			</div>
+			
+			</div><!-- END OF TOGGLE -->
+			
+  
+  
+		<div class="toggle">
+			<div class="toggle-title  ">
+				<h3>
+				<i></i>
+				<span class="title-name">Do I need to buy Insurance for my Solar PV system?</span>
+				</h3>
+			</div>
+			
+			<div class="toggle-inner">
+				<p>Solar PV systems are highly reliable if designed well. Moreover, the key components of a Solar PV system are backed by guarantees & warranties . However, since solar is like any other asset that you own, it is generally advisable to buy an insurance cover.</p>
+			</div>
+			
+			</div><!-- END OF TOGGLE -->
+			
+  
+  
+		<div class="toggle">
+			<div class="toggle-title ">
+				<h3>
+				<i></i>
+				<span class="title-name">Is solar power cheaper than grid power?</span>
+				</h3>
+			</div>
+			
+			<div class="toggle-inner">
+				<p>Yes, solar power today is cheaper that grid power for a lot of consumer categories across most states. Moreover, solar is a one time investment while grid tariff keeps increasing every year. Therefore, by choosing to go solar today, you are locking in a fixed energy price for the next 25 years.
+
+                    Illustration for an average residential customer in Delhi:
+                    A 2kW Solar PV system costs around Rs 1.4 lacs and has a life of at least 25 years with low recurring costs. This translates to a per unit levellized cost of Rs7 – 8 /kWh for the next 25 years
+                    
+                    Lets compare this with the cost of grid power. The discom charges him slab-wise but on an average he pays Rs 7.3/kWh. And this price keeps increasing by about 5% per annum, which means you may be paying Rs 24.7/kWh at the end of 25 years. This translates to a per unit levellized cost of approx. Rs   10 – 11/kWh when compared with the 25 year life of Solar PV system.</p>
+			</div>
+			
+            </div><!-- END OF TOGGLE -->
+            
+        <div class="toggle">
+                <div class="toggle-title ">
+                    <h3>
+                    <i></i>
+                    <span class="title-name">What is the return on investment (ROI) and payback period of solar PV?</span>
+                    </h3>
+                </div>
+                
+                <div class="toggle-inner">
+                    <p>Payback period for your solar PV system stands for the amount of time it takes for your initial investment in the system to be recovered from the savings it leads to and Return on Investment (ROI) refers to the effective returns that your investment would generate. The higher your monthly savings, the quicker your initial investment would be repaid and the higher your ROI would be. Typically, commercial & industrial consumers should expect payback in 3 – 5 years and residential consumers should expect payback in 5- 7 years. Once the initial cost of your system is paid back, the energy generated by it for the next 18 – 22 years is almost free of cost.
+                        </p>
+                </div>
+                
+        </div><!-- END OF TOGGLE -->
+        </div>
+        </section>
+        <script>
+                if( jQuery(".toggle .toggle-title").hasClass('active') ){
+                        jQuery(".toggle .toggle-title.active").closest('.toggle').find('.toggle-inner').show();
+                    }
+                    jQuery(".toggle .toggle-title").click(function(){
+                        if( jQuery(this).hasClass('active') ){
+                            jQuery(this).removeClass("active").closest('.toggle').find('.toggle-inner').slideUp(200);
+                        }
+                        else{	jQuery(this).addClass("active").closest('.toggle').find('.toggle-inner').slideDown(200);
+                        }
+                    });
+                  </script>
+                  <a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up"></i></a>
+                  <script>
+                      // ===== Scroll to Top ==== 
+                  $(window).scroll(function() {
+                      if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                          $('#return-to-top').fadeIn(200);    // Fade in the arrow
+                      } else {
+                          $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+                      }
+                  });
+                  $('#return-to-top').click(function() {      // When arrow is clicked
+                      $('body,html').animate({
+                          scrollTop : 0                       // Scroll to top of body
+                      }, 500);
+                  });
+                  </script>
+</body>
+</html>
