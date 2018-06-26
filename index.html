@@ -9,10 +9,19 @@
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+      
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     </head>
+
     <style>
     .nav-wrapper{
       background-color:black;
@@ -179,6 +188,9 @@ transition:all 0.3s linear 0s;
 }
     </style>
     <body>
+      <!--JavaScript at end of body for optimized loading materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+     <script type="text/javascript" src="js/materialize.js"></script>
       <!--Navbar-->
       <div class = "navbar-fixed">
       <nav>
@@ -195,35 +207,28 @@ transition:all 0.3s linear 0s;
         </div>
       </nav>
     </div>
-      <!--Carousel-->
-      <div id="slider">
-        
-        <figure style="position:absolute">
-          
-            <div class="slider1" style="position:relative">
-        <img src="images/background.jpg" alt>
-        <div class="content" style="position:absolute; margin-left:400px;margin-top:25px;">
-                <h5 style="color:white; font:15px Poppins,sans-serif;letter-spacing:1.5px; text-transform:uppercase;"><center>Welcome to Sunshine Energy</center></h5> 
-                <h1 style="color:white; font:30px Poppins,sans-serif"><center>One Time Investment.Life Time Savings</center></h1>
-                <h6 style="color:white; font:20px Poppins,sans-serif"><center>Efficient Solar Power Solutions</center></h6>
-        </div>
-        </div>
-        <div class="slider2">
-        <img src="images/contact2.jpg" alt>
-        </div>
-        <div class="slider3">
-        <img src="images/contact3.jpg" alt>
-        </div>
-        <div class="slider4">
-        <img src="images/carousel.jpg" alt>
-        </div>
-        <div class="slider5">
-        <img src="images/background.jpg" alt>
-        </div>    
-        </figure>
-        
-        </div>
-       
+
+       <!--Other element insitialisations-->
+       <script type="text/javascript" language="javascript">
+        $( document ).ready(function(){
+
+            $(".button-collapse").sideNav();//mobile screen menu init
+
+            $('.carousel').carousel(); //carousel init
+            $('.carousel-slider').slider({full_width: true});//slider init
+        });
+
+    </script>
+      <!--Carousel images/background.jpg images/contact2.jpg images/contact3.jpg images/carousel.jpg images/background.jpg-->
+      
+      <div class="carousel carousel-slider">
+        <a class="carousel-item" href="#one!"><img src="images/background.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="images/contact2.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="images/contact3.jpg"></a>
+        <a class="carousel-item" href="#four!"><img src="images/carousel.jpg"></a>
+      </div>
+
+
                  <div class="row" style="position:relative; margin-top:367px;">
                 <div class="col">
                   <div class="card">
@@ -395,8 +400,7 @@ transition:all 0.3s linear 0s;
                                </div>
                               </div>
                               </div>
-                          </footer>                   
-     <!--JavaScript at end of body for optimized loading-->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+                          </footer>                 
+     
     </body>
   </html>
